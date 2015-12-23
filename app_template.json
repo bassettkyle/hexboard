@@ -2,11 +2,11 @@
     "kind": "Template",
     "apiVersion": "v1",
     "metadata": {
-        "name": "hexboardkyle2",
+        "name": "hexboard",
         "creationTimestamp": null,
         "annotations": {
-            "name": "hexboardkyle2",
-            "description": "Hexboard Demo Kyle",
+            "name": "hexboard",
+            "description": "Kyle Bassett Hexboard Demo",
             "provider": "Red Hat Summit 2015 - JBoss Keynote demo team",
             "iconClass": "icon-nodejs",
             "tags": "instant-app,nodejs"
@@ -236,7 +236,7 @@
             "kind": "ImageStream",
             "apiVersion": "v1",
             "metadata": {
-                "name": "hexboardkyle2",
+                "name": "hexboard",
                 "creationTimestamp": null
             },
             "spec": {},
@@ -248,7 +248,7 @@
             "kind": "BuildConfig",
             "apiVersion": "v1",
             "metadata": {
-                "name": "hexboardkyle2",
+                "name": "hexboard",
                 "creationTimestamp": null
             },
             "spec": {
@@ -290,7 +290,7 @@
                 "output": {
                     "to": {
                         "kind": "ImageStreamTag",
-                        "name": "hexboardkyle2:latest"
+                        "name": "hexboard:latest"
                     }
                 },
                 "resources": {}
@@ -303,7 +303,7 @@
             "kind": "DeploymentConfig",
             "apiVersion": "v1",
             "metadata": {
-                "name": "hexboardkyle2",
+                "name": "hexboard",
                 "creationTimestamp": null
             },
             "spec": {
@@ -343,7 +343,7 @@
                     "spec": {
                         "containers": [
                             {
-                                "name": "hexboardkyle2",
+                                "name": "hexboard",
                                 "image": "hexboard:latest",
                                 "livenessProbe": {
                                     "httpGet": {
@@ -373,7 +373,7 @@
                                 ],
                                 "ports": [
                                     {
-                                        "name": "hexboardkyle2tcp",
+                                        "name": "hexboardtcp",
                                         "containerPort": 8080,
                                         "protocol": "TCP"
                                     }
@@ -398,13 +398,13 @@
             "kind": "Service",
             "apiVersion": "v1",
             "metadata": {
-                "name": "hexboardkyle2",
+                "name": "hexboard",
                 "creationTimestamp": null
             },
             "spec": {
                 "ports": [
                     {
-                        "name": "hexboardkyle2tcp",
+                        "name": "hexboardtcp",
                         "protocol": "TCP",
                         "port": 8080,
                         "targetPort": 8080,
@@ -412,7 +412,7 @@
                     }
                 ],
                 "selector": {
-                    "deploymentconfig": "hexboardkyle2"
+                    "deploymentconfig": "hexboard"
                 },
                 "portalIP": "",
                 "type": "ClusterIP"
@@ -422,14 +422,14 @@
             "kind": "Route",
             "apiVersion": "v1",
             "metadata": {
-                "name": "hexboardkyle2",
+                "name": "hexboard",
                 "creationTimestamp": null
             },
             "spec": {
                 "host": "",
                 "to": {
                     "kind": "Service",
-                    "name": "hexboardkyle2"
+                    "name": "hexboard"
                 }
             },
             "status": {}
