@@ -2,7 +2,7 @@
     "kind": "Template",
     "apiVersion": "v1",
     "metadata": {
-        "name": "hexboard",
+        "name": "hexboard-kyle",
         "creationTimestamp": null,
         "annotations": {
             "name": "hexboard",
