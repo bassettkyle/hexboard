@@ -2,10 +2,10 @@
     "kind": "Template",
     "apiVersion": "v1",
     "metadata": {
-        "name": "hexboard",
+        "name": "hexboard1",
         "creationTimestamp": null,
         "annotations": {
-            "name": "hexboard",
+            "name": "hexboard1",
             "description": "Hexboard Demo",
             "provider": "Red Hat Summit 2015 - JBoss Keynote demo team",
             "iconClass": "icon-nodejs",
