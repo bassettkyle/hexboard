@@ -2,10 +2,10 @@
     "kind": "Template",
     "apiVersion": "v1",
     "metadata": {
-        "name": "hexboardkyle",
+        "name": "hexboardkyle2",
         "creationTimestamp": null,
         "annotations": {
-            "name": "hexboardkyle",
+            "name": "hexboardkyle2",
             "description": "Hexboard Demo Kyle",
             "provider": "Red Hat Summit 2015 - JBoss Keynote demo team",
             "iconClass": "icon-nodejs",
@@ -248,7 +248,7 @@
             "kind": "BuildConfig",
             "apiVersion": "v1",
             "metadata": {
-                "name": "hexboard",
+                "name": "hexboardkyle2",
                 "creationTimestamp": null
             },
             "spec": {
