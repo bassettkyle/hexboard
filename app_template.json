@@ -236,7 +236,7 @@
             "kind": "ImageStream",
             "apiVersion": "v1",
             "metadata": {
-                "name": "hexboard",
+                "name": "hexboardkyle2",
                 "creationTimestamp": null
             },
             "spec": {},
@@ -290,7 +290,7 @@
                 "output": {
                     "to": {
                         "kind": "ImageStreamTag",
-                        "name": "hexboard:latest"
+                        "name": "hexboardkyle2:latest"
                     }
                 },
                 "resources": {}
@@ -303,7 +303,7 @@
             "kind": "DeploymentConfig",
             "apiVersion": "v1",
             "metadata": {
-                "name": "hexboard",
+                "name": "hexboardkyle2",
                 "creationTimestamp": null
             },
             "spec": {
@@ -343,7 +343,7 @@
                     "spec": {
                         "containers": [
                             {
-                                "name": "hexboard",
+                                "name": "hexboardkyle2",
                                 "image": "hexboard:latest",
                                 "livenessProbe": {
                                     "httpGet": {
@@ -373,7 +373,7 @@
                                 ],
                                 "ports": [
                                     {
-                                        "name": "hexboardtcp",
+                                        "name": "hexboardkyle2tcp",
                                         "containerPort": 8080,
                                         "protocol": "TCP"
                                     }
@@ -398,13 +398,13 @@
             "kind": "Service",
             "apiVersion": "v1",
             "metadata": {
-                "name": "hexboard",
+                "name": "hexboardkyle2",
                 "creationTimestamp": null
             },
             "spec": {
                 "ports": [
                     {
-                        "name": "hexboardtcp",
+                        "name": "hexboardkyle2tcp",
                         "protocol": "TCP",
                         "port": 8080,
                         "targetPort": 8080,
@@ -412,7 +412,7 @@
                     }
                 ],
                 "selector": {
-                    "deploymentconfig": "hexboard"
+                    "deploymentconfig": "hexboardkyle2"
                 },
                 "portalIP": "",
                 "type": "ClusterIP"
@@ -422,14 +422,14 @@
             "kind": "Route",
             "apiVersion": "v1",
             "metadata": {
-                "name": "hexboard",
+                "name": "hexboardkyle2",
                 "creationTimestamp": null
             },
             "spec": {
                 "host": "",
                 "to": {
                     "kind": "Service",
-                    "name": "hexboard"
+                    "name": "hexboardkyle2"
                 }
             },
             "status": {}
