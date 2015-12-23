@@ -6,7 +6,7 @@
         "creationTimestamp": null,
         "annotations": {
             "name": "hexboard",
-            "description": "Hexboard Demo",
+            "description": "Hexboard Demo Kyle Bassett",
             "provider": "Red Hat Summit 2015 - JBoss Keynote demo team",
             "iconClass": "icon-nodejs",
             "tags": "instant-app,nodejs"
