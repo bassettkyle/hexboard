@@ -2,11 +2,11 @@
     "kind": "Template",
     "apiVersion": "v1",
     "metadata": {
-        "name": "hexboard1",
+        "name": "hexboardkyle",
         "creationTimestamp": null,
         "annotations": {
-            "name": "hexboard1",
-            "description": "Hexboard Demo",
+            "name": "hexboardkyle",
+            "description": "Hexboard Demo Kyle",
             "provider": "Red Hat Summit 2015 - JBoss Keynote demo team",
             "iconClass": "icon-nodejs",
             "tags": "instant-app,nodejs"
@@ -273,7 +273,7 @@
                 "source": {
                     "type": "Git",
                     "git": {
-                        "uri": "http://github.com/2015-Middleware-Keynote/hexboard",
+                        "uri": "http://github.com/bassettkyle/hexboard",
                         "ref": "master"
                     }
                 },
