@@ -273,7 +273,7 @@
                 "source": {
                     "type": "Git",
                     "git": {
-                        "uri": "https://github.com/bassettkyle/hexboard",
+                        "uri": "http://github.com/bassettkyle/hexboard",
                         "ref": "master"
                     }
                 },
